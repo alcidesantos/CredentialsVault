@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <CheckBox
+            android:id="@+id/checkBoxSelecaoModo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:contentDescription="@string/lista_cred_cd_selecao_multipla" />
+
+        <TextView
+            android:id="@+id/textViewTitulo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/credenciais_lista_descricao"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <!-- Caixa de pesquisa -->
+    <EditText
+        android:id="@+id/editTextPesquisa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lista_cred_hint_pesquisa"
+        android:inputType="text"
+        android:maxLines="1"
+        android:imeOptions="actionSearch"
+        android:layout_marginBottom="12dp"
+        android:background="@android:drawable/editbox_background"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/credenciais_lista_descricao">
+
+        <LinearLayout
+            android:id="@+id/containerCredenciais"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/buttonAdicionar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lista_cred_btn_adicionar_credencial"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackground"
+        android:padding="12dp"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored" />
+
+</LinearLayout>

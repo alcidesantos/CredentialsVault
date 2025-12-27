@@ -1,0 +1,203 @@
+<resources>
+    <!-- App -->
+    <string name="app_name">CredentialsVault</string>
+    <string name="credenciais_lista_descricao">Liste des identifiants sauvegardés</string>
+
+    <!-- Configuração padrão (não traduzível) -->
+    <string name="default_password_special_chars" translatable="false">!@#$%^&amp;*</string>
+    <integer name="default_password_length">12</integer>
+    <bool name="default_use_uppercase">true</bool>
+    <bool name="default_use_lowercase">true</bool>
+    <bool name="default_use_digits">true</bool>
+
+    <!-- Definição de Credencial -->
+    <string name="def_cred_apagar_acao_apagar">Supprimer</string>
+    <string name="def_cred_apagar_confirmacao">Êtes-vous sûr de vouloir supprimer cet identifiant ?</string>
+    <string name="def_cred_apagar_titulo">🗑️ Confirmation de suppression</string>
+    <string name="def_cred_btn_cancelar">❌ Annuler</string>
+    <string name="def_cred_btn_guardar">✅ Enregistrer</string>
+    <string name="def_cred_btn_gerar_password">🔐 Générer un mot de passe aléatoire</string>
+    <string name="def_cred_chk_digitos">Chiffres</string>
+    <string name="def_cred_chk_especiais">Caractères spéciaux</string>
+    <string name="def_cred_chk_maiusculas">Lettres majuscules</string>
+    <string name="def_cred_chk_minusculas">Lettres minuscules</string>
+    <string name="def_cred_config_titulo">Configuration du mot de passe</string>
+    <string name="def_cred_erro_guardar">Erreur lors de l’enregistrement</string>
+    <string name="def_cred_erro_nome_obrigatorio">Veuillez saisir un nom</string>
+    <string name="def_cred_erro_tipo_caractere">Sélectionnez au moins un type de caractère</string>
+    <string name="def_cred_hint_especiais">Caractères spéciaux (ex : %s)</string>
+    <string name="def_cred_hint_nome">Nom (site, appareil, système)</string>
+    <string name="def_cred_hint_password">Mot de passe / NIP</string>
+    <string name="def_cred_hint_username">Nom d’utilisateur / Identifiant</string>
+    <string name="def_cred_tamanho_label">Longueur : %1$d</string>
+    <string name="def_cred_titulo_editar">Modifier : %s</string>
+    <string name="def_cred_titulo_nova">Nouvel identifiant</string>
+
+    <!-- Partilha de Password (DefinicaoCredencial) -->
+    <string name="def_cred_partilhar_acao_copiar">Copier</string>
+    <string name="def_cred_partilhar_acao_partilhar">Partager</string>
+    <string name="def_cred_partilhar_assunto">Mot de passe : %1$s</string>
+    <string name="def_cred_partilhar_confirmacao">Souhaitez-vous partager le mot de passe en clair ?</string>
+    <string name="def_cred_partilhar_copiada">Copié dans le presse-papiers</string>
+    <string name="def_cred_partilhar_escolher_app">Partager via</string>
+    <string name="def_cred_partilhar_msg_autenticacao">Veuillez vous authentifier pour révéler le mot de passe</string>
+    <string name="def_cred_partilhar_password_vazia">Mot de passe vide</string>
+    <string name="def_cred_partilhar_titulo">📤 Partager le mot de passe</string>
+
+    <!-- Lista de Credenciais -->
+    <string name="lista_cred_apagar_selecionadas_acao_apagar">Supprimer</string>
+    <string name="lista_cred_apagar_selecionadas_mensagem">Êtes-vous sûr de vouloir supprimer %1$d identifiant(s) ?</string>
+    <string name="lista_cred_apagar_selecionadas_titulo">🗑️ Confirmation de suppression</string>
+    <string name="lista_cred_apagadas_sucesso">Identifiant(s) supprimé(s)</string>
+    <string name="lista_cred_btn_adicionar_credencial">➕ Ajouter un identifiant</string>
+    <string name="lista_cred_exportar_nenhuma_selecionada">❌ Veuillez sélectionner au moins un identifiant.</string>
+
+    <!-- Partilha de Credencial (ListaCredenciais) -->
+    <string name="lista_cred_partilhar_assunto">Identifiant : %1$s</string>
+    <string name="lista_cred_partilhar_chooser_titulo">Partager via</string>
+    <string name="lista_cred_partilhar_btn_com_password">Oui, avec mot de passe</string>
+    <string name="lista_cred_partilhar_btn_sem_password">Non, nom et identifiant uniquement</string>
+    <string name="lista_cred_partilhar_completa">🔒 Identifiant exporté\n\nNom : %1$s\nIdentifiant : %2$s\nMot de passe : %3$s</string>
+    <string name="lista_cred_partilhar_mascarada">🔒 Identifiant exporté\n\nNom : %1$s\nIdentifiant : %2$s\nMot de passe : ••••••••</string>
+    <string name="lista_cred_partilhar_mensagem">Souhaitez-vous inclure le mot de passe dans le partage ?</string>
+    <string name="lista_cred_partilhar_titulo">Partager l’identifiant</string>
+
+    <!-- Autenticação (ListaCredenciais + SecurityManager) -->
+    <string name="lista_credenciais_autenticacao_mensagem">Authentifiez-vous comme vous le faites pour déverrouiller votre téléphone.</string>
+    <string name="lista_credenciais_autenticacao_titulo">Accéder aux identifiants</string>
+
+    <!-- SecurityManager -->
+    <string name="security_manager_btn_definicoes">Paramètres</string>
+    <string name="security_manager_confirmar_identidade_mensagem">Veuillez vous authentifier pour continuer.</string>
+    <string name="security_manager_confirmar_identidade_titulo">🔐 Confirmer l’identité</string>
+    <string name="security_manager_configurar_mensagem">Configurez un code PIN, un schéma ou une empreinte digitale dans Paramètres.</string>
+    <string name="security_manager_configurar_titulo">🔐 Sécurité requise</string>
+    <string name="security_manager_erro_autenticacao">Erreur : %1$s</string>
+
+    <!-- Importação/Exportação -->
+    <string name="imp_exp_titulo_parcial">Exporter la sélection (%1$d)</string>
+
+    <!-- Botões principais -->
+    <string name="impexp_btn_exportar_bd">🗃️ Exporter la base de données (.db)</string>
+    <string name="impexp_btn_exportar_json">📤 Exporter en JSON (.json)</string>
+    <string name="impexp_btn_exportar_senha">🔐 Exporter avec mot de passe (.cvb)</string>
+    <string name="impexp_btn_importar">⬇️ Importer la base de données (.db)</string>
+    <string name="impexp_btn_importar_json">📥 Importer un fichier JSON (.json)</string>
+    <string name="impexp_btn_importar_senha">🔐 Importer avec mot de passe (.cvb)</string>
+
+    <!-- Seleção de ficheiros -->
+    <string name="impexp_importar_cvb_selecionar">Sélectionnez une sauvegarde chiffrée (.cvb)</string>
+    <string name="impexp_importar_json_selecionar">Sélectionnez un fichier JSON (.json)</string>
+    <string name="impexp_importar_selecionar">Sélectionnez un fichier de base de données (.db)</string>
+
+    <!-- Títulos de diálogos -->
+    <string name="impexp_importar_bd_mensagem">Comment souhaitez-vous importer la base de données ?</string>
+    <string name="impexp_importar_bd_acao_adicionar">Ajouter aux existants</string>
+    <string name="impexp_importar_bd_acao_substituir">Remplacer tout</string>
+    <string name="impexp_importar_json_acao_adicionar">Ajouter aux existants</string>
+    <string name="impexp_importar_json_acao_substituir">Remplacer tout</string>
+    <string name="impexp_importar_json_mensagem">Les identifiants du fichier JSON seront importés.\n\n• \"Remplacer tout\" : supprime tous les identifiants actuels.\n• \"Ajouter aux existants\" : conserve les identifiants actuels et insère les nouveaux (en évitant les doublons exacts).</string>
+    <string name="impexp_importar_json_titulo">Importer un JSON</string>
+    <string name="impexp_importar_titulo">Importer la base de données</string>
+    <string name="impexp_senha_importar_acao_importar">Importer</string>
+    <string name="impexp_senha_importar_mensagem_introducao">Cette opération déchiffre la sauvegarde. Le mot de passe doit correspondre à celui utilisé lors de l’exportation.</string>
+    <string name="impexp_senha_importar_titulo">🔐 Saisissez le mot de passe</string>
+
+    <!-- Progresso -->
+    <string name="impexp_progress_desencriptar">Déchiffrement en cours…</string>
+    <string name="impexp_progress_encriptar">Chiffrement de la sauvegarde en cours…</string>
+    <string name="impexp_progress_exportar_json">Génération du JSON en cours…</string>
+    <string name="impexp_progress_importar_json">Importation du JSON en cours…</string>
+
+    <!-- Nomes de ficheiros -->
+    <string name="imp_exp_nome_ficheiro_cvb">CredentialsVault_Sauvegarde_MDP_%1$s.cvb</string>
+    <string name="impexp_nome_ficheiro" translatable="false">CredentialsVault_Sauvegarde_%1$s.db</string>
+    <string name="impexp_nome_ficheiro_json">CredentialsVault_Export_%1$s.json</string>
+
+    <!-- Sucesso -->
+    <string name="impexp_backup_automatico">Sauvegarde automatique enregistrée : %1$s</string>
+    <string name="impexp_bd_importada_sucesso">Importation terminée !\n%1$s</string>
+    <string name="impexp_cvb_importado_sucesso">Sauvegarde importée avec succès !\n%1$s</string>
+    <string name="impexp_json_importado_sucesso">Fichier JSON importé avec succès !\n%1$s</string>
+
+    <!-- Informações adicionais -->
+    <string name="impexp_bd_ignorados">ℹ️ %1$d identifiants ignorés (déjà présents).</string>
+    <string name="impexp_json_ignorados">ℹ️ %1$d identifiants ignorés (déjà présents).</string>
+
+    <!-- Erros genéricos -->
+    <string name="erro_exportacao_bd_generico">Impossible d’exporter la base de données. Veuillez vérifier les autorisations et réessayer.</string>
+    <string name="erro_exportacao_json_generico">Impossible d’exporter le fichier JSON. Veuillez vérifier les autorisations et réessayer.</string>
+    <string name="erro_exportacao_senha_generico">Impossible d’exporter la sauvegarde chiffrée. Veuillez vérifier le mot de passe et réessayer.</string>
+    <string name="impexp_erro_bd_nao_encontrada">Base de données introuvable</string>
+    <string name="impexp_erro_exportar">Erreur d’exportation</string>
+    <string name="impexp_importar_erro_invalido">Fichier invalide : ce n’est pas une base de données CredentialsVault</string>
+    <string name="impexp_importar_erro_leitura">Erreur de lecture du fichier</string>
+
+    <!-- Erros específicos: senha -->
+    <string name="erro_senha_obrigatoria">Veuillez saisir le mot de passe</string>
+    <string name="impexp_senha_erro_titulo_incorreta">❌ Mot de passe incorrect</string>
+    <string name="impexp_senha_erro_mensagem_incorreta">Le mot de passe saisi ne correspond pas à celui utilisé pour chiffrer la sauvegarde.\n\nVeuillez vérifier et réessayer.</string>
+    <string name="impexp_senha_btn_tentar_novamente">Réessayer</string>
+
+    <!-- Erros de importação -->
+    <string name="impexp_erro_importar_titulo">Erreur lors de l’importation de la sauvegarde</string>
+    <string name="impexp_erro_importar_mensagem">Une erreur s’est produite lors de l’importation :\n\n%1$s</string>
+    <string name="erro_importacao_json_titulo">Erreur lors de l’importation du JSON</string>
+    <string name="erro_importacao_json_mensagem">Impossible d’importer le fichier :\n\n%1$s</string>
+
+    <!-- Validação de ficheiros -->
+    <string name="erro_extensao_btn_tentar_novamente">Réessayer</string>
+    <string name="erro_extensao_mensagem">Le fichier sélectionné n’a pas l’extension attendue.\n\n➡️ Veuillez choisir un fichier avec l’extension : **%1$s**</string>
+    <string name="erro_extensao_titulo">⚠️ Type de fichier incorrect</string>
+
+    <!-- Avisos de segurança -->
+    <string name="impexp_aviso_seguranca">⚠️ Les mots de passe sont exportés en clair. Il est recommandé d’utiliser un transfert sécurisé et de supprimer le fichier après usage.</string>
+    <string name="impexp_json_aviso">🔒 Ce fichier contiendra des mots de passe en clair.</string>
+    <string name="impexp_json_recomendacoes">Recommandations :\n• Conservez-le uniquement dans des emplacements sécurisés\n• Supprimez le fichier après utilisation\n• Ne le partagez pas par e-mail ou messagerie non chiffrée</string>
+    <string name="impexp_json_titulo">⚠️ Exporter au format JSON</string>
+
+    <!-- Partilha -->
+    <string name="impexp_backup_assunto">Sauvegarde CredentialsVault</string>
+    <string name="impexp_backup_corpo">Sauvegarde générée le %1$s</string>
+    <string name="impexp_partilhar_titulo">Partager la sauvegarde via</string>
+
+    <!-- Títulos gerais -->
+    <string name="impexp_titulo">Importer / Exporter</string>
+
+    <!-- Confirmação JSON (dialog_confirmar_json.xml) -->
+    <string name="impexp_json_confirmacao">Je confirme avoir compris les risques et souhaite exporter les mots de passe en clair</string>
+
+    <!-- Diálogo de senha (exportação) -->
+    <string name="impexp_senha_titulo">🔐 Définissez un mot de passe pour la sauvegarde</string>
+    <string name="impexp_senha_btn_exportar">Exporter</string>
+    <string name="impexp_json_btn_exportar">Exporter</string>
+
+    <!-- Erros de validação -->
+    <string name="impexp_senha_erro_vazia">Le mot de passe ne peut pas être vide</string>
+    <string name="impexp_senha_erro_curta">Le mot de passe doit contenir au moins 6 caractères</string>
+    <string name="impexp_senha_erro_confirmacao">Les mots de passe ne correspondent pas</string>
+
+    <string name="imp_exp_progress_encriptar">Chiffrement de la sauvegarde en cours…</string>
+
+    <string name="impexp_erro_importar_mensagem_generico">
+    Une erreur s’est produite lors de l’importation de la sauvegarde.\nVeuillez vérifier le fichier et réessayer.
+</string>
+
+    <string name="def_cred_btn_apagar">🗑️ Supprimer cet identifiant</string>
+
+    <!-- Lista de Credenciais -->
+    <string name="lista_cred_hint_pesquisa">🔍 Rechercher par nom ou identifiant</string>
+    <string name="lista_cred_cd_selecao_multipla">Mode de sélection multiple</string>
+
+    <!-- Diálogo de senha -->
+    <string name="impexp_senha_hint">Mot de passe</string>
+    <string name="impexp_senha_confirmar_hint">Confirmer le mot de passe</string>
+
+    <!-- Acessibilidade -->
+    <string name="acessibilidade_toggle_senha">Afficher/masquer le mot de passe</string>
+
+    <!-- Menu de seleção múltipla -->
+    <string name="lista_cred_menu_apagar_selecionadas">🗑️ Supprimer la sélection</string>
+    <string name="lista_cred_menu_exportar_selecionadas">📤 Exporter la sélection</string>
+
+</resources>

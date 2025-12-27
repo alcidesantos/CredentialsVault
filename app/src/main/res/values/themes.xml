@@ -1,0 +1,12 @@
+<!-- res/values/themes.xml -->
+<resources>
+    <style name="Theme.CredentialsVault" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Cores básicas (AppCompat usa estes nomes) -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/teal_200</item>
+
+        <!-- Opcional: cor da barra de status (API 21+) -->
+        <item name="android:statusBarColor">@color/purple_700</item>
+    </style>
+</resources>

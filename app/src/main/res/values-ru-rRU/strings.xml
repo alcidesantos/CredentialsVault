@@ -1,0 +1,203 @@
+<resources>
+    <!-- App -->
+    <string name="app_name">CredentialsVault</string>
+    <string name="credenciais_lista_descricao">Список сохранённых учётных данных</string>
+
+    <!-- Configuração padrão (não traduzível) -->
+    <string name="default_password_special_chars" translatable="false">!@#$%^&amp;*</string>
+    <integer name="default_password_length">12</integer>
+    <bool name="default_use_uppercase">true</bool>
+    <bool name="default_use_lowercase">true</bool>
+    <bool name="default_use_digits">true</bool>
+
+    <!-- Definição de Credencial -->
+    <string name="def_cred_apagar_acao_apagar">Удалить</string>
+    <string name="def_cred_apagar_confirmacao">Вы уверены, что хотите удалить эту учётную запись?</string>
+    <string name="def_cred_apagar_titulo">🗑️ Подтверждение удаления</string>
+    <string name="def_cred_btn_cancelar">❌ Отмена</string>
+    <string name="def_cred_btn_guardar">✅ Сохранить</string>
+    <string name="def_cred_btn_gerar_password">🔐 Сгенерировать случайный пароль</string>
+    <string name="def_cred_chk_digitos">Цифры</string>
+    <string name="def_cred_chk_especiais">Специальные символы</string>
+    <string name="def_cred_chk_maiusculas">Заглавные буквы</string>
+    <string name="def_cred_chk_minusculas">Строчные буквы</string>
+    <string name="def_cred_config_titulo">Настройка пароля</string>
+    <string name="def_cred_erro_guardar">Ошибка сохранения</string>
+    <string name="def_cred_erro_nome_obrigatorio">Введите название</string>
+    <string name="def_cred_erro_tipo_caractere">Выберите хотя бы один тип символов</string>
+    <string name="def_cred_hint_especiais">Специальные символы (напр.: %s)</string>
+    <string name="def_cred_hint_nome">Название (сайт, устройство, система)</string>
+    <string name="def_cred_hint_password">Пароль / PIN-код</string>
+    <string name="def_cred_hint_username">Имя пользователя / Логин</string>
+    <string name="def_cred_tamanho_label">Длина: %1$d</string>
+    <string name="def_cred_titulo_editar">Редактировать: %s</string>
+    <string name="def_cred_titulo_nova">Новая учётная запись</string>
+
+    <!-- Partilha de Password (DefinicaoCredencial) -->
+    <string name="def_cred_partilhar_acao_copiar">Копировать</string>
+    <string name="def_cred_partilhar_acao_partilhar">Отправить</string>
+    <string name="def_cred_partilhar_assunto">Пароль: %1$s</string>
+    <string name="def_cred_partilhar_confirmacao">Отправить пароль открытым текстом?</string>
+    <string name="def_cred_partilhar_copiada">Скопировано в буфер обмена</string>
+    <string name="def_cred_partilhar_escolher_app">Отправить через</string>
+    <string name="def_cred_partilhar_msg_autenticacao">Подтвердите личность, чтобы показать пароль</string>
+    <string name="def_cred_partilhar_password_vazia">Пустой пароль</string>
+    <string name="def_cred_partilhar_titulo">📤 Отправить пароль</string>
+
+    <!-- Lista de Credenciais -->
+    <string name="lista_cred_apagar_selecionadas_acao_apagar">Удалить</string>
+    <string name="lista_cred_apagar_selecionadas_mensagem">Вы уверены, что хотите удалить %1$d учётную запись(и)?</string>
+    <string name="lista_cred_apagar_selecionadas_titulo">🗑️ Подтверждение удаления</string>
+    <string name="lista_cred_apagadas_sucesso">Учётная(ые) запись(и) удалена(ы)</string>
+    <string name="lista_cred_btn_adicionar_credencial">➕ Добавить учётную запись</string>
+    <string name="lista_cred_exportar_nenhuma_selecionada">❌ Выберите хотя бы одну учётную запись.</string>
+
+    <!-- Partilha de Credencial (ListaCredenciais) -->
+    <string name="lista_cred_partilhar_assunto">Учётная запись: %1$s</string>
+    <string name="lista_cred_partilhar_chooser_titulo">Отправить через</string>
+    <string name="lista_cred_partilhar_btn_com_password">Да, с паролем</string>
+    <string name="lista_cred_partilhar_btn_sem_password">Нет, только название и логин</string>
+    <string name="lista_cred_partilhar_completa">🔒 Экспортированная учётная запись\n\nНазвание: %1$s\nЛогин: %2$s\nПароль: %3$s</string>
+    <string name="lista_cred_partilhar_mascarada">🔒 Экспортированная учётная запись\n\nНазвание: %1$s\nЛогин: %2$s\nПароль: ••••••••</string>
+    <string name="lista_cred_partilhar_mensagem">Включить пароль в отправку?</string>
+    <string name="lista_cred_partilhar_titulo">Отправить учётную запись</string>
+
+    <!-- Autenticação (ListaCredenciais + SecurityManager) -->
+    <string name="lista_credenciais_autenticacao_mensagem">Авторизуйтесь, как при разблокировке телефона.</string>
+    <string name="lista_credenciais_autenticacao_titulo">Доступ к учётным записям</string>
+
+    <!-- SecurityManager -->
+    <string name="security_manager_btn_definicoes">Настройки</string>
+    <string name="security_manager_confirmar_identidade_mensagem">Подтвердите личность для продолжения.</string>
+    <string name="security_manager_confirmar_identidade_titulo">🔐 Подтверждение личности</string>
+    <string name="security_manager_configurar_mensagem">Настройте PIN-код, графический ключ или отпечаток в Настройках.</string>
+    <string name="security_manager_configurar_titulo">🔐 Требуется безопасность</string>
+    <string name="security_manager_erro_autenticacao">Ошибка: %1$s</string>
+
+    <!-- Importação/Exportação -->
+    <string name="imp_exp_titulo_parcial">Экспорт выбранных (%1$d)</string>
+
+    <!-- Botões principais -->
+    <string name="impexp_btn_exportar_bd">🗃️ Экспортировать базу данных (.db)</string>
+    <string name="impexp_btn_exportar_json">📤 Экспортировать в JSON (.json)</string>
+    <string name="impexp_btn_exportar_senha">🔐 Экспортировать с паролем (.cvb)</string>
+    <string name="impexp_btn_importar">⬇️ Импортировать базу данных (.db)</string>
+    <string name="impexp_btn_importar_json">📥 Импортировать JSON-файл (.json)</string>
+    <string name="impexp_btn_importar_senha">🔐 Импортировать с паролем (.cvb)</string>
+
+    <!-- Seleção de ficheiros -->
+    <string name="impexp_importar_cvb_selecionar">Выберите зашифрованную резервную копию (.cvb)</string>
+    <string name="impexp_importar_json_selecionar">Выберите файл JSON (.json)</string>
+    <string name="impexp_importar_selecionar">Выберите файл базы данных (.db)</string>
+
+    <!-- Títulos de diálogos -->
+    <string name="impexp_importar_bd_mensagem">Как импортировать базу данных?</string>
+    <string name="impexp_importar_bd_acao_adicionar">Добавить к существующим</string>
+    <string name="impexp_importar_bd_acao_substituir">Заменить все</string>
+    <string name="impexp_importar_json_acao_adicionar">Добавить к существующим</string>
+    <string name="impexp_importar_json_acao_substituir">Заменить все</string>
+    <string name="impexp_importar_json_mensagem">Учётные данные из JSON-файла будут импортированы.\n\n• \"Заменить все\": удалит все текущие учётные записи.\n• \"Добавить к существующим\": сохранит текущие и добавит новые (без дубликатов).</string>
+    <string name="impexp_importar_json_titulo">Импорт JSON</string>
+    <string name="impexp_importar_titulo">Импорт базы данных</string>
+    <string name="impexp_senha_importar_acao_importar">Импортировать</string>
+    <string name="impexp_senha_importar_mensagem_introducao">Эта операция расшифрует резервную копию. Пароль должен совпадать с тем, что использовался при экспорте.</string>
+    <string name="impexp_senha_importar_titulo">🔐 Введите пароль</string>
+
+    <!-- Progresso -->
+    <string name="impexp_progress_desencriptar">Расшифровка…</string>
+    <string name="impexp_progress_encriptar">Шифрование резервной копии…</string>
+    <string name="impexp_progress_exportar_json">Генерация JSON…</string>
+    <string name="impexp_progress_importar_json">Импорт JSON…</string>
+
+    <!-- Nomes de ficheiros -->
+    <string name="imp_exp_nome_ficheiro_cvb">CredentialsVault_РезервнаяКопия_Пароль_%1$s.cvb</string>
+    <string name="impexp_nome_ficheiro" translatable="false">CredentialsVault_РезервнаяКопия_%1$s.db</string>
+    <string name="impexp_nome_ficheiro_json">CredentialsVault_Экспорт_%1$s.json</string>
+
+    <!-- Sucesso -->
+    <string name="impexp_backup_automatico">Автоматическая резервная копия сохранена: %1$s</string>
+    <string name="impexp_bd_importada_sucesso">Импорт завершён!\n%1$s</string>
+    <string name="impexp_cvb_importado_sucesso">Резервная копия успешно импортирована!\n%1$s</string>
+    <string name="impexp_json_importado_sucesso">JSON успешно импортирован!\n%1$s</string>
+
+    <!-- Informações adicionais -->
+    <string name="impexp_bd_ignorados">ℹ️ %1$d учётных записей пропущено (уже существуют).</string>
+    <string name="impexp_json_ignorados">ℹ️ %1$d учётных записей пропущено (уже существуют).</string>
+
+    <!-- Erros genéricos -->
+    <string name="erro_exportacao_bd_generico">Не удалось экспортировать базу данных. Проверьте разрешения и повторите попытку.</string>
+    <string name="erro_exportacao_json_generico">Не удалось экспортировать JSON-файл. Проверьте разрешения и повторите попытку.</string>
+    <string name="erro_exportacao_senha_generico">Не удалось экспортировать зашифрованную резервную копию. Проверьте пароль и повторите попытку.</string>
+    <string name="impexp_erro_bd_nao_encontrada">База данных не найдена</string>
+    <string name="impexp_erro_exportar">Ошибка экспорта</string>
+    <string name="impexp_importar_erro_invalido">Неверный файл: это не база данных CredentialsVault</string>
+    <string name="impexp_importar_erro_leitura">Ошибка чтения файла</string>
+
+    <!-- Erros específicos: senha -->
+    <string name="erro_senha_obrigatoria">Введите пароль</string>
+    <string name="impexp_senha_erro_titulo_incorreta">❌ Неверный пароль</string>
+    <string name="impexp_senha_erro_mensagem_incorreta">Введённый пароль не совпадает с паролем, использованным для шифрования резервной копии.\n\nПроверьте и повторите попытку.</string>
+    <string name="impexp_senha_btn_tentar_novamente">Повторить</string>
+
+    <!-- Erros de importação -->
+    <string name="impexp_erro_importar_titulo">Ошибка импорта резервной копии</string>
+    <string name="impexp_erro_importar_mensagem">При импорте произошла ошибка:\n\n%1$s</string>
+    <string name="erro_importacao_json_titulo">Ошибка импорта JSON</string>
+    <string name="erro_importacao_json_mensagem">Не удалось импортировать файл:\n\n%1$s</string>
+
+    <!-- Validação de ficheiros -->
+    <string name="erro_extensao_btn_tentar_novamente">Повторить</string>
+    <string name="erro_extensao_mensagem">Выбранный файл имеет неверное расширение.\n\n➡️ Выберите файл с расширением: **%1$s**</string>
+    <string name="erro_extensao_titulo">⚠️ Неверный тип файла</string>
+
+    <!-- Avisos de segurança -->
+    <string name="impexp_aviso_seguranca">⚠️ Пароли экспортируются в открытом виде. Рекомендуется безопасная передача и удаление файла после использования.</string>
+    <string name="impexp_json_aviso">🔒 Этот файл будет содержать пароли в открытом виде.</string>
+    <string name="impexp_json_recomendacoes">Рекомендации:\n• Храните файл только в безопасных местах\n• Удаляйте файл после использования\n• Не отправляйте по незашифрованной почте или мессенджерам</string>
+    <string name="impexp_json_titulo">⚠️ Экспорт в формате JSON</string>
+
+    <!-- Partilha -->
+    <string name="impexp_backup_assunto">Резервная копия CredentialsVault</string>
+    <string name="impexp_backup_corpo">Резервная копия создана %1$s</string>
+    <string name="impexp_partilhar_titulo">Отправить резервную копию через</string>
+
+    <!-- Títulos gerais -->
+    <string name="impexp_titulo">Импорт / Экспорт</string>
+
+    <!-- Confirmação JSON (dialog_confirmar_json.xml) -->
+    <string name="impexp_json_confirmacao">Я понимаю риски и хочу экспортировать пароли в открытом виде</string>
+
+    <!-- Diálogo de senha (exportação) -->
+    <string name="impexp_senha_titulo">🔐 Задайте пароль для резервной копии</string>
+    <string name="impexp_senha_btn_exportar">Экспортировать</string>
+    <string name="impexp_json_btn_exportar">Экспортировать</string>
+
+    <!-- Erros de validação -->
+    <string name="impexp_senha_erro_vazia">Пароль не может быть пустым</string>
+    <string name="impexp_senha_erro_curta">Пароль должен содержать не менее 6 символов</string>
+    <string name="impexp_senha_erro_confirmacao">Пароли не совпадают</string>
+
+    <string name="imp_exp_progress_encriptar">Шифрование резервной копии…</string>
+
+    <string name="impexp_erro_importar_mensagem_generico">
+    При импорте резервной копии произошла ошибка.\nПроверьте файл и повторите попытку.
+</string>
+
+    <string name="def_cred_btn_apagar">🗑️ Удалить эту учётную запись</string>
+
+    <!-- Lista de Credenciais -->
+    <string name="lista_cred_hint_pesquisa">🔍 Поиск по названию или логину</string>
+    <string name="lista_cred_cd_selecao_multipla">Режим множественного выбора</string>
+
+    <!-- Diálogo de senha -->
+    <string name="impexp_senha_hint">Пароль</string>
+    <string name="impexp_senha_confirmar_hint">Подтвердите пароль</string>
+
+    <!-- Acessibilidade -->
+    <string name="acessibilidade_toggle_senha">Показать/скрыть пароль</string>
+
+    <!-- Menu de seleção múltipla -->
+    <string name="lista_cred_menu_apagar_selecionadas">🗑️ Удалить выбранное</string>
+    <string name="lista_cred_menu_exportar_selecionadas">📤 Экспортировать выбранное</string>
+
+</resources>

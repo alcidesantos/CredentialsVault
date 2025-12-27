@@ -1,0 +1,21 @@
+# Android
+.gradle/
+**/build/
+local.properties
+*.apk
+*.ap_
+*.aab
+
+# IDE (Android Studio)
+.idea/
+*.iml
+!gradle/wrapper/gradle-wrapper.properties
+
+# Keystore (NUNCA deve ir para o GitHub!)
+*.keystore
+*.jks
+
+# Logs & temp
+*.log
+captures/
+profiling/

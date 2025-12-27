@@ -1,0 +1,203 @@
+<resources>
+    <!-- App -->
+    <string name="app_name">CredentialsVault</string>
+    <string name="credenciais_lista_descricao">Lista de Credenciales Guardadas</string>
+
+    <!-- Configuração padrão (não traduzível) -->
+    <string name="default_password_special_chars" translatable="false">!@#$%^&amp;*</string>
+    <integer name="default_password_length">12</integer>
+    <bool name="default_use_uppercase">true</bool>
+    <bool name="default_use_lowercase">true</bool>
+    <bool name="default_use_digits">true</bool>
+
+    <!-- Definição de Credencial -->
+    <string name="def_cred_apagar_acao_apagar">Eliminar</string>
+    <string name="def_cred_apagar_confirmacao">¿Está seguro de que desea eliminar esta credencial?</string>
+    <string name="def_cred_apagar_titulo">🗑️ Confirmar eliminación</string>
+    <string name="def_cred_btn_cancelar">❌ Cancelar</string>
+    <string name="def_cred_btn_guardar">✅ Guardar</string>
+    <string name="def_cred_btn_gerar_password">🔐 Generar Contraseña Aleatoria</string>
+    <string name="def_cred_chk_digitos">Dígitos</string>
+    <string name="def_cred_chk_especiais">Caracteres especiales</string>
+    <string name="def_cred_chk_maiusculas">Letras mayúsculas</string>
+    <string name="def_cred_chk_minusculas">Letras minúsculas</string>
+    <string name="def_cred_config_titulo">Configuración de la Contraseña</string>
+    <string name="def_cred_erro_guardar">Error al guardar</string>
+    <string name="def_cred_erro_nome_obrigatorio">Por favor, ingrese un nombre</string>
+    <string name="def_cred_erro_tipo_caractere">Seleccione al menos un tipo de carácter</string>
+    <string name="def_cred_hint_especiais">Caracteres especiales (ej: %s)</string>
+    <string name="def_cred_hint_nome">Nombre (sitio, dispositivo, sistema)</string>
+    <string name="def_cred_hint_password">Contraseña / PIN</string>
+    <string name="def_cred_hint_username">Usuario / Login</string>
+    <string name="def_cred_tamanho_label">Longitud: %1$d</string>
+    <string name="def_cred_titulo_editar">Editar: %s</string>
+    <string name="def_cred_titulo_nova">Nueva Credencial</string>
+
+    <!-- Partilha de Password (DefinicaoCredencial) -->
+    <string name="def_cred_partilhar_acao_copiar">Copiar</string>
+    <string name="def_cred_partilhar_acao_partilhar">Compartir</string>
+    <string name="def_cred_partilhar_assunto">Contraseña: %1$s</string>
+    <string name="def_cred_partilhar_confirmacao">¿Desea compartir la contraseña en texto plano?</string>
+    <string name="def_cred_partilhar_copiada">Copiada al portapapeles</string>
+    <string name="def_cred_partilhar_escolher_app">Compartir mediante</string>
+    <string name="def_cred_partilhar_msg_autenticacao">Autentíquese para revelar la contraseña</string>
+    <string name="def_cred_partilhar_password_vazia">Contraseña vacía</string>
+    <string name="def_cred_partilhar_titulo">📤 Compartir contraseña</string>
+
+    <!-- Lista de Credenciais -->
+    <string name="lista_cred_apagar_selecionadas_acao_apagar">Eliminar</string>
+    <string name="lista_cred_apagar_selecionadas_mensagem">¿Está seguro de que desea eliminar %1$d credencial(es)?</string>
+    <string name="lista_cred_apagar_selecionadas_titulo">🗑️ Confirmar eliminación</string>
+    <string name="lista_cred_apagadas_sucesso">Credencial(es) eliminada(s)</string>
+    <string name="lista_cred_btn_adicionar_credencial">➕ Agregar Credencial</string>
+    <string name="lista_cred_exportar_nenhuma_selecionada">❌ Por favor, seleccione al menos una credencial.</string>
+
+    <!-- Partilha de Credencial (ListaCredenciais) -->
+    <string name="lista_cred_partilhar_assunto">Credencial: %1$s</string>
+    <string name="lista_cred_partilhar_chooser_titulo">Compartir mediante</string>
+    <string name="lista_cred_partilhar_btn_com_password">Sí, con contraseña</string>
+    <string name="lista_cred_partilhar_btn_sem_password">No, solo nombre y usuario</string>
+    <string name="lista_cred_partilhar_completa">🔒 Credencial exportada\n\nNombre: %1$s\nUsuario: %2$s\nContraseña: %3$s</string>
+    <string name="lista_cred_partilhar_mascarada">🔒 Credencial exportada\n\nNombre: %1$s\nUsuario: %2$s\nContraseña: ••••••••</string>
+    <string name="lista_cred_partilhar_mensagem">¿Desea incluir la contraseña en el envío?</string>
+    <string name="lista_cred_partilhar_titulo">Compartir credencial</string>
+
+    <!-- Autenticação (ListaCredenciais + SecurityManager) -->
+    <string name="lista_credenciais_autenticacao_mensagem">Autentíquese como lo hace para desbloquear su teléfono.</string>
+    <string name="lista_credenciais_autenticacao_titulo">Acceder a credenciales</string>
+
+    <!-- SecurityManager -->
+    <string name="security_manager_btn_definicoes">Ajustes</string>
+    <string name="security_manager_confirmar_identidade_mensagem">Autentíquese para continuar.</string>
+    <string name="security_manager_confirmar_identidade_titulo">🔐 Confirmar identidad</string>
+    <string name="security_manager_configurar_mensagem">Configure un PIN, patrón o huella digital en Ajustes.</string>
+    <string name="security_manager_configurar_titulo">🔐 Seguridad requerida</string>
+    <string name="security_manager_erro_autenticacao">Error: %1$s</string>
+
+    <!-- Importação/Exportação -->
+    <string name="imp_exp_titulo_parcial">Exportar seleccionadas (%1$d)</string>
+
+    <!-- Botões principais -->
+    <string name="impexp_btn_exportar_bd">🗃️ Exportar Base de Datos (.db)</string>
+    <string name="impexp_btn_exportar_json">📤 Exportar JSON (.json)</string>
+    <string name="impexp_btn_exportar_senha">🔐 Exportar con Contraseña (.cvb)</string>
+    <string name="impexp_btn_importar">⬇️ Importar Base de Datos (.db)</string>
+    <string name="impexp_btn_importar_json">📥 Importar JSON (.json)</string>
+    <string name="impexp_btn_importar_senha">🔐 Importar con Contraseña (.cvb)</string>
+
+    <!-- Seleção de ficheiros -->
+    <string name="impexp_importar_cvb_selecionar">Seleccione una copia de seguridad encriptada (.cvb)</string>
+    <string name="impexp_importar_json_selecionar">Seleccione un archivo JSON (.json)</string>
+    <string name="impexp_importar_selecionar">Seleccione un archivo de base de datos (.db)</string>
+
+    <!-- Títulos de diálogos -->
+    <string name="impexp_importar_bd_mensagem">¿Cómo desea importar la base de datos?</string>
+    <string name="impexp_importar_bd_acao_adicionar">Agregar a las existentes</string>
+    <string name="impexp_importar_bd_acao_substituir">Reemplazar todas</string>
+    <string name="impexp_importar_json_acao_adicionar">Agregar a las existentes</string>
+    <string name="impexp_importar_json_acao_substituir">Reemplazar todas</string>
+    <string name="impexp_importar_json_mensagem">Las credenciales del archivo JSON se importarán.\n\n• \"Reemplazar todas\": elimina todas las credenciales actuales.\n• \"Agregar a las existentes\": mantiene las credenciales actuales e inserta las nuevas (evitando duplicados exactos).</string>
+    <string name="impexp_importar_json_titulo">Importar JSON</string>
+    <string name="impexp_importar_titulo">Importar Base de Datos</string>
+    <string name="impexp_senha_importar_acao_importar">Importar</string>
+    <string name="impexp_senha_importar_mensagem_introducao">Esta operación desencripta la copia de seguridad. La contraseña debe coincidir con la usada al exportar.</string>
+    <string name="impexp_senha_importar_titulo">🔐 Ingrese la contraseña</string>
+
+    <!-- Progresso -->
+    <string name="impexp_progress_desencriptar">Desencriptando…</string>
+    <string name="impexp_progress_encriptar">Encriptando copia de seguridad…</string>
+    <string name="impexp_progress_exportar_json">Generando JSON…</string>
+    <string name="impexp_progress_importar_json">Importando JSON…</string>
+
+    <!-- Nomes de ficheiros -->
+    <string name="imp_exp_nome_ficheiro_cvb">CredentialsVault_Backup_Contrasena_%1$s.cvb</string>
+    <string name="impexp_nome_ficheiro" translatable="false">CredentialsVault_Backup_%1$s.db</string>
+    <string name="impexp_nome_ficheiro_json">CredentialsVault_Exportacion_%1$s.json</string>
+
+    <!-- Sucesso -->
+    <string name="impexp_backup_automatico">Copia de seguridad automática guardada: %1$s</string>
+    <string name="impexp_bd_importada_sucesso">¡Importación completada!\n%1$s</string>
+    <string name="impexp_cvb_importado_sucesso">¡Copia de seguridad importada con éxito!\n%1$s</string>
+    <string name="impexp_json_importado_sucesso">¡JSON importado con éxito!\n%1$s</string>
+
+    <!-- Informações adicionais -->
+    <string name="impexp_bd_ignorados">ℹ️ %1$d credenciales ignoradas (ya existen).</string>
+    <string name="impexp_json_ignorados">ℹ️ %1$d credenciales ignoradas (ya existen).</string>
+
+    <!-- Erros genéricos -->
+    <string name="erro_exportacao_bd_generico">No se pudo exportar la base de datos. Verifique los permisos e intente nuevamente.</string>
+    <string name="erro_exportacao_json_generico">No se pudo exportar el archivo JSON. Verifique los permisos e intente nuevamente.</string>
+    <string name="erro_exportacao_senha_generico">No se pudo exportar la copia de seguridad encriptada. Verifique la contraseña e intente nuevamente.</string>
+    <string name="impexp_erro_bd_nao_encontrada">Base de datos no encontrada</string>
+    <string name="impexp_erro_exportar">Error al exportar</string>
+    <string name="impexp_importar_erro_invalido">Archivo inválido: no es una base de datos de CredentialsVault</string>
+    <string name="impexp_importar_erro_leitura">Error al leer el archivo</string>
+
+    <!-- Erros específicos: senha -->
+    <string name="erro_senha_obrigatoria">Por favor, ingrese la contraseña</string>
+    <string name="impexp_senha_erro_titulo_incorreta">❌ Contraseña incorrecta</string>
+    <string name="impexp_senha_erro_mensagem_incorreta">La contraseña ingresada no coincide con la usada para encriptar la copia de seguridad.\n\nVerifique e intente nuevamente.</string>
+    <string name="impexp_senha_btn_tentar_novamente">Intentar nuevamente</string>
+
+    <!-- Erros de importação -->
+    <string name="impexp_erro_importar_titulo">Error al importar la copia de seguridad</string>
+    <string name="impexp_erro_importar_mensagem">Ocurrió un error durante la importación:\n\n%1$s</string>
+    <string name="erro_importacao_json_titulo">Error al importar JSON</string>
+    <string name="erro_importacao_json_mensagem">No se pudo importar el archivo:\n\n%1$s</string>
+
+    <!-- Validação de ficheiros -->
+    <string name="erro_extensao_btn_tentar_novamente">Intentar nuevamente</string>
+    <string name="erro_extensao_mensagem">El archivo seleccionado no tiene la extensión esperada.\n\n➡️ Por favor, elija un archivo con extensión: **%1$s**</string>
+    <string name="erro_extensao_titulo">⚠️ Tipo de archivo incorrecto</string>
+
+    <!-- Avisos de segurança -->
+    <string name="impexp_aviso_seguranca">⚠️ Las contraseñas se exportan en texto plano. Se recomienda transferencia segura y eliminación del archivo tras su uso.</string>
+    <string name="impexp_json_aviso">🔒 Este archivo contendrá contraseñas en texto plano.</string>
+    <string name="impexp_json_recomendacoes">Recomendaciones:\n• Guarde únicamente en ubicaciones seguras\n• Elimine el archivo después de usarlo\n• No lo comparta por correo o mensajes no encriptados</string>
+    <string name="impexp_json_titulo">⚠️ Exportar como JSON</string>
+
+    <!-- Partilha -->
+    <string name="impexp_backup_assunto">Copia de seguridad de CredentialsVault</string>
+    <string name="impexp_backup_corpo">Copia de seguridad generada el %1$s</string>
+    <string name="impexp_partilhar_titulo">Compartir copia de seguridad mediante</string>
+
+    <!-- Títulos gerais -->
+    <string name="impexp_titulo">Importar / Exportar</string>
+
+    <!-- Confirmação JSON (dialog_confirmar_json.xml) -->
+    <string name="impexp_json_confirmacao">Confirmo que comprendo los riesgos y deseo exportar las contraseñas en texto plano</string>
+
+    <!-- Diálogo de senha (exportação) -->
+    <string name="impexp_senha_titulo">🔐 Defina una contraseña para la copia de seguridad</string>
+    <string name="impexp_senha_btn_exportar">Exportar</string>
+    <string name="impexp_json_btn_exportar">Exportar</string>
+
+    <!-- Erros de validação -->
+    <string name="impexp_senha_erro_vazia">La contraseña no puede estar vacía</string>
+    <string name="impexp_senha_erro_curta">La contraseña debe tener al menos 6 caracteres</string>
+    <string name="impexp_senha_erro_confirmacao">Las contraseñas no coinciden</string>
+
+    <string name="imp_exp_progress_encriptar">Encriptando copia de seguridad…</string>
+
+    <string name="impexp_erro_importar_mensagem_generico">
+    Ocurrió un error al importar la copia de seguridad.\nVerifique el archivo e intente nuevamente.
+</string>
+
+    <string name="def_cred_btn_apagar">🗑️ Eliminar esta credencial</string>
+
+    <!-- Lista de Credenciais -->
+    <string name="lista_cred_hint_pesquisa">🔍 Buscar por nombre o usuario</string>
+    <string name="lista_cred_cd_selecao_multipla">Modo de selección múltiple</string>
+
+    <!-- Diálogo de senha -->
+    <string name="impexp_senha_hint">Contraseña</string>
+    <string name="impexp_senha_confirmar_hint">Confirmar contraseña</string>
+
+    <!-- Acessibilidade -->
+    <string name="acessibilidade_toggle_senha">Alternar visibilidad de la contraseña</string>
+
+    <!-- Menu de seleção múltipla -->
+    <string name="lista_cred_menu_apagar_selecionadas">🗑️ Eliminar seleccionadas</string>
+    <string name="lista_cred_menu_exportar_selecionadas">📤 Exportar seleccionadas</string>
+
+</resources>

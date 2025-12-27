@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/impexp_titulo"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/buttonExportarBD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/impexp_btn_exportar_bd"
+        android:textAllCaps="false"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Exportar com senha -->
+    <Button
+        android:id="@+id/buttonExportarComSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/impexp_btn_exportar_senha"
+        android:textAllCaps="false"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonExportarJSON"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/impexp_btn_exportar_json"
+        android:textAllCaps="false"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonImportar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/impexp_btn_importar"
+        android:textAllCaps="false"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Importar com senha -->
+    <Button
+        android:id="@+id/buttonImportarComSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/impexp_btn_importar_senha"
+        android:textAllCaps="false"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Importar JSON -->
+    <Button
+        android:id="@+id/buttonImportarJSON"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/impexp_btn_importar_json"
+        android:textAllCaps="false"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/impexp_aviso_seguranca"
+        android:textColor="#FF5722"
+        android:background="#FFF3E0"
+        android:padding="12dp"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>
