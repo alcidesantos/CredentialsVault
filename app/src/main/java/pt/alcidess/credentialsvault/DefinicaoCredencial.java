@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -25,6 +26,8 @@ public class DefinicaoCredencial extends AppCompatActivity {
     private EditText editTextNome;
     private EditText editTextUsername;
     private EditText editTextPassword;
+
+    private TextView dicaLongClick;
     private Button buttonCancelar;
     private Button buttonGuardar;
     private SeekBar seekBarTamanho;
@@ -101,6 +104,7 @@ public class DefinicaoCredencial extends AppCompatActivity {
         editTextNome.setText(credencialAtual.getNome());
         editTextUsername.setText(credencialAtual.getUsername());
         editTextPassword.setText(credencialAtual.getPassword());
+        atualizarVisibilidadeDicaLongClick(credencialAtual.getPassword());
         seekBarTamanho.setProgress(credencialAtual.getPasswordLength());
         atualizarTextoTamanho();
         checkBoxMaiusculas.setChecked(credencialAtual.isUseUppercase());
@@ -108,6 +112,17 @@ public class DefinicaoCredencial extends AppCompatActivity {
         checkBoxDigitos.setChecked(credencialAtual.isUseDigits());
         checkBoxEspeciais.setChecked(!TextUtils.isEmpty(credencialAtual.getSpecialChars()));
         editTextEspeciais.setText(credencialAtual.getSpecialChars());
+    }
+
+    private void atualizarVisibilidadeDicaLongClick(String password) {
+        TextView dicaLongClick = findViewById(R.id.textViewDicaLongClick);
+        if (dicaLongClick != null) {
+            if (password != null && !password.isEmpty()) {
+                dicaLongClick.setVisibility(View.VISIBLE);
+            } else {
+                dicaLongClick.setVisibility(View.GONE);
+            }
+        }
     }
 
     private void initListeners() {
@@ -185,7 +200,9 @@ public class DefinicaoCredencial extends AppCompatActivity {
             @Override
             public void afterTextChanged(Editable s) {
                 if (credencialAtual != null) {
-                    credencialAtual.setPassword(s.toString());
+                    String novaPassword = s.toString();
+                    credencialAtual.setPassword(novaPassword);
+                    atualizarVisibilidadeDicaLongClick(novaPassword);
                 }
             }
         });

@@ -201,4 +201,14 @@
     <string name="lista_cred_menu_apagar_selecionadas">🗑️ Apagar selecionada(s)</string>
     <string name="lista_cred_menu_exportar_selecionadas">📤 Exportar selecionada(s)</string>
 
+    <string name="def_cred_dica_longclick_password">(Toque longo para partilhar password rapidamente)</string>
+
+    <string name="ajuda_titulo">Ajuda</string>
+    <string name="ajuda_lista_titulo">Como usar esta lista</string>
+    <string name="ajuda_lista_conteudo">
+• Toque curto: abre a credencial para edição.\n
+• Toque longo: partilha rápida de uma credencial.\n
+• Com seleção múltipla: exporte ou apague várias credenciais.
+</string>
+
 </resources>

@@ -7,6 +7,11 @@
         android:icon="@drawable/outline_delete_24"
         app:showAsAction="ifRoom" />
     <item
+        android:id="@+id/action_help"
+        android:title="@string/ajuda_titulo"
+        android:icon="@drawable/outline_help_center_24"
+        app:showAsAction="ifRoom" />
+    <item
         android:id="@+id/action_exportar_selecionadas"
         android:title="@string/lista_cred_menu_exportar_selecionadas"
         android:icon="@drawable/outline_database_24"

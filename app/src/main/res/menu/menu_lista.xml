@@ -3,6 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
+        android:id="@+id/action_help"
+        android:title="@string/ajuda_titulo"
+        android:icon="@drawable/outline_help_center_24"
+        app:showAsAction="ifRoom" />
+
+    <item
         android:id="@+id/action_impexp"
         android:title="@string/impexp_titulo"
         android:icon="@drawable/outline_database_24"

@@ -41,6 +41,9 @@ public class ListaCredenciais extends AppCompatActivity {
     private static final int REQUEST_CODE_CREDENCIAL = 100;
     private static final int REQUEST_CODE_IMP_EXP = 200;
 
+    private static final String PREFS_NAME = "CredentialsVaultPrefs";
+    private static final String KEY_PRIMEIRA_VEZ_LISTA = "primeira_vez_lista";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -298,6 +301,14 @@ public class ListaCredenciais extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        int itemId = item.getItemId();
+
+        // Ajuda está sempre disponível, independentemente do modo
+        if (itemId == R.id.action_help) {
+            mostrarAjuda();
+            return true;
+        }
+
         if (modoSelecao) {
             if (item.getItemId() == R.id.action_apagar_selecionadas) {
                 confirmarApagarSelecionadas();
@@ -355,5 +366,17 @@ public class ListaCredenciais extends AppCompatActivity {
         carregarDaBaseDeDados();
 
         Toast.makeText(this, R.string.lista_cred_apagadas_sucesso, Toast.LENGTH_SHORT).show();
+    }
+
+    // Em ListaCredenciais.java
+    private void mostrarAjuda() {
+        String titulo = getString(R.string.ajuda_lista_titulo);
+        String conteudo = getString(R.string.ajuda_lista_conteudo);
+
+        new AlertDialog.Builder(this)
+                .setTitle(titulo)
+                .setMessage(conteudo)
+                .setPositiveButton(android.R.string.ok, null)
+                .show();
     }
 }

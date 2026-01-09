@@ -200,4 +200,13 @@
     <string name="lista_cred_menu_apagar_selecionadas">🗑️ Supprimer la sélection</string>
     <string name="lista_cred_menu_exportar_selecionadas">📤 Exporter la sélection</string>
 
+    <string name="def_cred_dica_longclick_password">(Appui long pour partager mot de passe rapidement)</string>
+
+    <string name="ajuda_titulo">Aide</string>
+    <string name="ajuda_lista_titulo">Comment utiliser cette liste</string>
+    <string name="ajuda_lista_conteudo">
+• Appui court : ouvre la credential pour modification.\n
+• Appui long : partage rapide d’une credential.\n
+• En sélection multiple : exportez ou supprimez plusieurs credentials.
+</string>
 </resources>

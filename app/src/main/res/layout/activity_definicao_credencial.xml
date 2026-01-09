@@ -63,6 +63,17 @@
                 android:maxLines="1" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <TextView
+            android:id="@+id/textViewDicaLongClick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-18dp"
+            android:layout_marginBottom="25dp"
+            android:text="@string/def_cred_dica_longclick_password"
+            android:textSize="12sp"
+            android:textColor="?android:textColorSecondary"
+            android:visibility="gone" />
+
         <!-- Botão Gerar Password -->
         <Button
             android:id="@+id/buttonGerarPassword"
