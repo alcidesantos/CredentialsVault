@@ -19,3 +19,8 @@ Grab the latest APK from [Releases](https://github.com/alcidesantos/CredentialsV
 
 ## License
 MIT License — see [LICENSE](LICENSE) for details.
+
+## How to update
+1. Download the latest APK from [Releases](https://github.com/alcidesantos/CredentialsVault/releases).
+2. Open the APK file — Android will show **"Update"**.
+3. Tap **"Update"** — your data will be preserved automatically.
